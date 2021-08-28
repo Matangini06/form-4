@@ -1,0 +1,237 @@
+/*@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400,700ital@1&display=swap" rel="stylesheet")
+
+
+html{
+	font-family: 'Karla', sans-serif;
+	font-size: 16px;
+}
+
+
+
+.main{
+	color: white;
+	text-align: center;
+	background-image: url("https://images.unsplash.com/photo-1561571994-3c61c554181a?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTE3fHxiZWFjaHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60");
+	background-size: cover;
+	background-position: center;
+}
+
+#body{
+	width: 600px;
+	padding: 30px;
+	margin: auto;
+	border-radius: 10px;
+	text-align: left;
+	background-color: #1b1b32;
+	font-size: 20px;
+	color: white;
+}
+
+#name{
+	width: 560px;
+	padding: 15px;
+	border-radius: 10px;
+}
+
+#Email{
+	width: 560px;
+	padding: 15px;
+	border-radius: 10px;
+}
+
+#Phone{
+	width: 560px;
+	padding: 15px;
+	border-radius: 10px;
+}
+
+
+#comment{
+	border-radius: 5px;
+	padding: 50px;
+	border: none;
+	width: 500px;
+}
+
+#submit{
+	width: 600px;
+	padding: 20px;
+	font-size: 20px;
+	border-radius: 10px;
+	border: none;
+	margin-top: 20px;
+	background-color: #37af65;
+}
+
+
+
+@media(max-width: 760px){
+	.main{
+	     min-width: 530px;
+	}
+	
+	#body{
+		width: 400px;
+		border-radius: 50px;
+		padding: 50px;
+	}
+	#name{
+	width: 370px;
+	padding: 15px;
+	border-radius: 5px;
+    }
+
+    #Email{
+	width: 370px;
+	padding: 15px;
+	border-radius: 5px;
+    }
+
+    #Phone{
+	width: 370px;
+	padding: 15px;
+	border-radius: 5px;
+    }
+
+    #comment{
+	border-radius: 5px;
+	padding: 50px;
+	border: none;
+	width: 300px;
+    }
+
+    #submit{
+	width: 400px;
+	padding: 20px;
+	font-size: 20px;
+	border-radius: 10px;
+	border: none;
+	margin-top: 20px;
+	background-color: #37af65;
+    }
+}*/
+
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	overflow: hidden;
+}
+
+:root{
+	--primary-color: #4ecdc4;
+}
+
+section{
+	min-height: 56vh;
+	background: #101d28;
+}
+
+.register{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	max-height: 400px;
+	background-color: #abe9cd;
+	background-image: linear-gradient(315deg, #abe9cd 0%, #3eadcf 74%);
+	z-index: 10;
+	display: flex;
+	justify-content: center;
+	align-items: center;padding-bottom: 50px;
+}
+
+.register h1{
+	font-family: monospace;
+	font-size: 50px;
+	text-align: center;
+	margin-bottom: 20px;
+	color: deepskyblue;
+	letter-spacing: 1px;
+}
+
+.register-form{
+	text-align: center;
+	display: flex;
+	background: rgba(255,255,255,0.10);
+	border: 1px solid rgba(255,255,255,0.18);
+	padding: 50px;
+	flex-direction: column;
+	margin-top: -15%;
+	box-shadow: 6px 6px 12px rgba(19,19,19,0.6);
+	font-family: monospace;
+	transition: all 0.5s ease-in-out;
+}
+
+.register-form:hover{
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.register-form .submit{
+	border-radius: 50px;
+	border: none;
+	cursor: pointer;
+	background: white;
+	color: #101d28;
+	margin-top: 20px;
+	padding: 15px 50px;
+	font-size: 18px;
+	text-transform: uppercase;
+	font-family: monospace;
+	box-shadow: 6px 6px 12px rgba(19,19,19,0.6);
+	align-self: center;
+	transition: all 0.5s ease-in-out;
+}
+
+.register-form .submit:hover{
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.register-form a{
+	text-align: center;
+	padding-top: 10px;
+	color: white;
+	text-decoration: none;
+}
+
+.register-form span{
+	height: 70px;
+	line-height: 0.5;
+}
+
+.register-form span label{
+	font-size: 1em;
+	position: absolute;
+	font-weight: 400;
+	color: #eee;
+	transform: translate(0, 1em);
+}
+
+.register-form span input{
+	border: none;
+	background: none;
+	border-bottom: 1px solid var(--primary-color);
+	outline: none;
+	overflow: visible;
+	font-size: 2em;
+	color: #eee;
+	position: relative;
+	width: auto;
+}
+
+.register-form span input:required{
+	box-shadow: none;
+	width: 500px;
+}
+
+input-filled label{
+	transition: all 0.3s ease;
+	transform: translate(0, -0.6em) !important;
+	color: deepskyblue !important;
+	font-size: 1.2em !important;
+}
+
+@media(max-width: 760px)
